@@ -3,8 +3,11 @@ Theme Name: Portfolio site
 Author: Florian Müllner
 */
 
-@import "css/bootstrap.css";
+/*@import "scss/bootstrap.scss";*/
+/*@import "scss/variable.scss";*/
 
+@import "css/variables.css";
+@import "css/skill.css";
 body{
     box-sizing: border-box;
 }
@@ -21,7 +24,7 @@ header{
 }
 
 .content-offset{
-    margin-top: 60px;
+    margin-top: 56px;
 }
 
 .hero-area__headline{
@@ -128,6 +131,42 @@ header{
 }
 
 
-.embed-responsive-32by9::before {
-    padding-top: 28.125%;
+.embed-responsive-hero::before {
+    padding-top: 100%;
+}
+@media all and (min-width: 768px){
+    .embed-responsive-hero::before {
+        padding-top: 28.125%;
+    }
+}
+
+@media all and (min-width: 768px){
+    .profile-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .profile-img--aligned{
+        width: 30%;
+        margin-left: auto;
+    }
+}
+
+.content-block{
+    margin-top: 2.5rem;
+}
+@media all and (min-width: 768px){
+    .content-block{
+        margin-top: 5rem;
+    }
+}
+
+.js-content-block{
+    opacity: 0;
+    transition-duration: 1.4s;
+}
+
+.social-icon{
+    width: 70px;
 }

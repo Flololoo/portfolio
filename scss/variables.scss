@@ -1,0 +1,21 @@
+$primary:       green;
+$secondary:     red;
+
+$gray-900:      #333;
+
+$border-radius:               .25rem;
+$border-radius-lg:            .3rem;
+$border-radius-sm:            .2rem;
+
+$container-max-widths: (
+        md: 720px,
+        lg: 960px,
+        xl: 1400px
+) ;
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  color: $secondary;
+}
+
+@import "bootstrap/scss/bootstrap";

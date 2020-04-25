@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="de">
 <head>
 
     <meta charset="UTF-8">
@@ -11,337 +11,308 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+
+    <title>Hier ein cooler title</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
+<body>
 
-
-<header>
-    <nav class="navbar navbar-light justify-content-between">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <div>
-            <div class="navbar-nav flex-row">
-                <a class="nav-item nav-link active mr-4" href="#projects">Home</a>
-                <a class="nav-item nav-link" href="#">Features</a>
-            </div>
-        </div>
-    </nav>
-
-</header>
-
-<div class="bg-light content-offset">
-    <div class="position-relative mb-5">
-        <div class="embed-responsive embed-responsive-32by9">
-            <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item" alt="">
-        </div>
-
-        <div class="hero-area__headline d-flex align-items-center">
-            <div class="container">
-                <h1 class="text-uppercase hero-area__headline-text">hero area!</h1>
-            </div>
-        </div>
-    </div>
-
-    <!--<div class="my-5"></div>
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item" alt="">
+    <header>
+        <nav class="navbar navbar-light justify-content-between bg-primary">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <div>
+                <div class="navbar-nav flex-row">
+                    <a class="nav-item nav-link active mr-4" href="#projects">Home</a>
+                    <a class="nav-item nav-link" href="#">Features</a>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item" alt="">
-                </div>
+        </nav>
+    </header>
+
+    <div class="bg-light content-offset">
+        <div class="position-relative mb-5">
+            <div class="embed-responsive embed-responsive-hero">
+                <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item" alt="">
             </div>
-            <div class="carousel-item">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item" alt="">
+
+            <div class="hero-area__headline d-flex align-items-center">
+                <div class="container">
+                    <h1 class="text-uppercase hero-area__headline-text text-primary">hero area!</h1>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>-->
+
+        <div class="container content-block js-content-block" id="projects">
+            <h2 class="text-secondary">noch ein title</h2>
+            <div class="row">
 
 
-    <!--
-    <div class="container" id="projects">
-        <h1>Überschrift</h1>
-
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <button type="button" class="btn btn-unstyled p-0 w-100 border-0 project-modal__btn mb-4">
-                    <div data-toggle="modal" data-target="#projecteModal0"
-                         class="embed-responsive embed-responsive-1by1">
-                        <img src="https://placeimg.com/400/400/any" class="embed-responsive-item img-zoom" alt="">
-                    </div>
-                </button>
-                <div class="modal fade project-modal" id="projecteModal0" tabindex="-1" role="dialog"
-                     aria-labelledby="projecteModal0" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header project-modal__header">
-                                <h5 class="modal-title" id="exampleModalLabel0">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body px-0 project-modal__body position-relative">
-                                <div class=" bg-gradient">
-                                </div>
-                                <div class="mb-5">
-                                    <div class="row no-gutters">
-                                        <div class="col-12 col-md-6">
-                                            <div class="embed-responsive embed-responsive-1by1">
-                                                <img src="https://placeimg.com/400/400/any"
-                                                     class="embed-responsive-item" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="pl-md-3">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
-                                                autem deserunt eveniet fugiat in labore magnam quisquam recusandae.
-                                                Facere nostrum optio repellendus velit veniam? Modi non quos rerum
-                                                vitae?
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item"
-                                         alt="">
-                                </div>
-
-                                <div class="px-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                                        quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                                        repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                                        veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                                        quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                                        repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                                        veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                                        quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                                        repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                                        veritatis.</p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <button type="button" class="btn btn-unstyled p-0 w-100 border-0 project-modal__btn mb-4">
-                    <div data-toggle="modal" data-target="#projecteModal1"
-                         class="embed-responsive embed-responsive-1by1">
-                        <img src="https://placeimg.com/400/400/any" class="embed-responsive-item img-zoom" alt="">
-                    </div>
-                </button>
-                <div class="modal fade project-modal" id="projecteModal1" tabindex="-1" role="dialog"
-                     aria-labelledby="projecteModal1" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header project-modal__header">
-                                <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body px-0 project-modal__body position-relative">
-                                <div class=" bg-gradient">
-                                </div>
-                                <div class="mb-5">
-                                    <div class="row no-gutters">
-                                        <div class="col-12 col-md-6">
-                                            <div class="embed-responsive embed-responsive-1by1">
-                                                <img src="https://placeimg.com/400/400/any"
-                                                     class="embed-responsive-item" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6">
-                                            <div class="pl-md-3">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
-                                                autem deserunt eveniet fugiat in labore magnam quisquam recusandae.
-                                                Facere nostrum optio repellendus velit veniam? Modi non quos rerum
-                                                vitae?
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item"
-                                         alt="">
-                                </div>
-
-                                <div class="px-3">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                                        quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                                        repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                                        veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                                        quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                                        repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                                        veritatis.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                                        quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                                        repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                                        veritatis.</p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
-
-    <div class="container mt-5" id="projects">
-        <h1>noch ein title</h1>
-        <div class="row">
-
-                <div class="col-12 col-md-4">
+                <!-- copy this block as often as you like
+                        just increment the number of projectModal1-->
+                <div class="col-12 col-md-4 mb-5 js-content-block">
                     <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
-                        <div data-toggle="modal" data-target="#projecteModal1"
+                        <div data-toggle="modal" data-target="#projectModal1"
                              class="embed-responsive embed-responsive-1by1 project-teaser">
                             <img src="https://placeimg.com/400/400/any" class="embed-responsive-item img-zoom" alt="">
 
                             <div class="project-teaser__text">read more</div>
                         </div>
                     </button>
-                    <div class="modal fade project-modal" id="projecteModal1" tabindex="-1" role="dialog"
-                         aria-labelledby="projecteModal1" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header project-modal__header">
-                                    <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body px-0 project-modal__body position-relative">
-                                    <div class=" bg-gradient">
-                                    </div>
-                                    <div class="mb-5">
-                                        <div class="row no-gutters">
-                                            <div class="col-12 col-md-6">
-                                                <div class="embed-responsive embed-responsive-1by1">
-                                                    <img src="https://placeimg.com/400/400/any"
-                                                         class="embed-responsive-item" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <div class="pl-md-3">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
-                                                    autem deserunt eveniet fugiat in labore magnam quisquam recusandae.
-                                                    Facere nostrum optio repellendus velit veniam? Modi non quos rerum
-                                                    vitae?
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item"
-                                             alt="">
-                                    </div>
+                </div>
+            </div>
+        </div>
 
-                                    <div class="px-3">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                                            quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                                            repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                                            veritatis.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                                            quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                                            repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                                            veritatis.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                                            quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                                            repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                                            veritatis.</p>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                                </div>
+
+        <div class="position-relative content-block js-content-block">
+            <div class="profile-img">
+                <div class="profile-img--aligned js-profile-img--aligned">
+                    <div class="embed-responsive embed-responsive-4by3 js-profile-img--parallax">
+                        <img src="https://placeimg.com/400/300/any" class="embed-responsive-item" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row no-gutters js-profile-container">
+                    <div class="col-12 col-md-6 order-2 order-md-1">
+                        <div class="h-100 d-flex flex-column justify-content-center mt-3 mt-md-0">
+                            <h2 class="text-secondary">title</h2>
+
+                            <ul>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                                <li>skajdn asdhbdha</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, autem consectetur
+                                eligendi
+                                fugit, iusto laudantium molestiae nam nesciunt non quasi quisquam quo quod repellat saepe
+                                sed
+                                similique unde vel voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-dark">
+            <div class="container content-block js-content-block js-skill-block py-5">
+
+                <h2>skillz</h2>
+                <div class="d-flex justify-content-around flex-wrap">
+                    <div class="js-skill text-white" data-skill="70">
+                        <div class="cont">
+                            <div class="cont-val js-cont-val">
                             </div>
+                            <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="text-center">Maya</h4>
+                            <p>Da dann noch schönen Text</p>
+                        </div>
+                    </div>
+
+                    <div class="js-skill text-white" data-skill="30">
+                        <div class="cont">
+                            <div class="cont-val js-cont-val">
+                            </div>
+                            <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="js-skill text-white" data-skill="95">
+                        <div class="cont">
+                            <div class="cont-val js-cont-val">
+                            </div>
+                            <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="js-skill text-white" data-skill="100">
+                        <div class="cont">
+                            <div class="cont-val js-cont-val">
+                            </div>
+                            <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="560px"></circle>
+                            </svg>
                         </div>
                     </div>
                 </div>
 
-        </div>
-    </div>
-
-
-    <div class="container-fluid mt-5">
-        <div class="row no-gutters">
-            <div class="col-12 offset-md-2 col-md-4 order-2 order-md-1">
-                <div class="h-100 d-flex flex-column justify-content-center ">
-                    <h2>title</h2>
-
-                    <ul>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                        <li>skajdn asdhbdha</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, autem consectetur eligendi
-                        fugit, iusto laudantium molestiae nam nesciunt non quasi quisquam quo quod repellat saepe sed
-                        similique unde vel voluptate.</p>
-                </div>
             </div>
-            <div class="col-12 col-md-6 order-1 order-md-2">
-                <div class="embed-responsive embed-responsive-32by9">
-                    <img src="https://placeimg.com/400/300/any" class="embed-responsive-item" alt="">
+        </div>
+
+        <div class="container content-block js-content-block">
+            <div class="contact-bar">
+                <h2 class="text-secondary">Contact me!</h2>
+                <div class="d-flex flex-wrap justify-content-around py-3 my-md-5">
+                    <a href="#">
+                        <img class="social-icon" src="./img/social/facebook.svg" alt="">
+                        <span class="sr-only">Check out my facebook page</span>
+                    </a>
+
+                    <a href="#">
+                        <img class="social-icon" src="./img/social/facebook.svg" alt="">
+                        <span class="sr-only">Check out my LinkedIn page</span>
+                    </a>
+
+                    <a href="#">
+                        <img class="social-icon" src="./img/social/facebook.svg" alt="">
+                        <span class="sr-only">Check out my Twitter page</span>
+                    </a>
+
+                    <a href="#">
+                        <img class="social-icon" src="./img/social/facebook.svg" alt="">
+                        <span class="sr-only">Check out my Tinder page</span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-</div>
+    <footer class="bg-primary py-4 content-block">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>Logo</div>
+                <div>
+                    <div>Name</div>
+                    <div>Adresse</div>
+                    <div>Site by me :]</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-<script
-        src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
-        integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs="
-        crossorigin="anonymous"></script>
 
-<script type="module" src="js/scripts.js"></script>
+
+
+
+
+
+    <!-- here is the rest
+    -->
+    <div class="modal fade project-modal" id="projectModal1" tabindex="-1" role="dialog"
+         aria-labelledby="projectModal1" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header project-modal__header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-0 project-modal__body position-relative">
+                    <div class=" bg-gradient">
+                    </div>
+                    <div class="mb-5">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6">
+                                <div class="embed-responsive embed-responsive-1by1">
+                                    <img src="https://placeimg.com/400/400/any"
+                                         class="embed-responsive-item" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="pl-md-3">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
+                                    autem deserunt eveniet fugiat in labore magnam quisquam recusandae.
+                                    Facere nostrum optio repellendus velit veniam? Modi non quos rerum
+                                    vitae?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item"
+                             alt="">
+                    </div>
+
+                    <div class="px-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
+                            quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
+                            repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
+                            veritatis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
+                            quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
+                            repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
+                            veritatis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
+                            quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
+                            repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
+                            veritatis.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script
+            src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+            integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs="
+            crossorigin="anonymous"></script>
+
+    <script type="module" src="js/scripts.js"></script>
 
 </body>
 </html>
