@@ -5,7 +5,7 @@ const cssImport = require('gulp-cssimport');
 
 function defaultTask(cb) {
     // place code for your default task here
-    console.log('test')
+    console.log('running scss task')
 
     return gulp.src('scss/*.scss')
         .pipe(sass({

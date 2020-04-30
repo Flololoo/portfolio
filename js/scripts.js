@@ -6,17 +6,27 @@ import {skill} from './skill.js'
 $(document).ready(function () {
     skill();
 
-
     let $blocks = $('.js-content-block');
     $blocks.css('transform', 'translateY(' + $(window).height() / 6 + 'px)');
     scrollContent($blocks);
+    navbar();
     document.addEventListener('scroll', function (event) {
         scrollContent($blocks);
+        navbar();
     }, true /*Capture event*/);
 });
 
-function scrollContent($blocks) {
+function navbar() {
+    const $navbar = $('.js-navbar');
 
+    if($(window).scrollTop() === 0){
+        $navbar.removeClass('bg-primary');
+    }else{
+        $navbar.addClass('bg-primary');
+    }
+}
+
+function scrollContent($blocks) {
     let screenBottom = $(window).scrollTop() + $(window).height(),
         offset = 0;
 

@@ -1,0 +1,26 @@
+.hero-area__headline{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.hero-area__headline-text{
+    font-size: 5rem;
+}
+
+@media all and (max-width: 767px){
+    .hero-area__headline-text{
+        font-size: 3rem;
+    }
+}
+
+.embed-responsive-hero::before {
+    padding-top: 100%;
+}
+@media all and (min-width: 768px){
+    .embed-responsive-hero::before {
+        padding-top: 28.125%;
+    }
+}

@@ -1,4 +1,4 @@
-$primary:       green;
+$primary:       #123456;
 $secondary:     red;
 
 $gray-900:      #333;
@@ -11,11 +11,40 @@ $container-max-widths: (
         md: 720px,
         lg: 960px,
         xl: 1400px
-) ;
+);
+
+:root{
+  --color-skill: #ff0000;
+}
+
+/* fonts */
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
   color: $secondary;
+}
+
+body{
+  font-size: calc(16rem/16);
+}
+
+h1, .h1{
+  font-size: calc(32rem/16);
+}
+h2, .h2{
+  font-size: calc(30rem/16);
+}
+h3, .h3{
+  font-size: calc(24rem/16);
+}
+h4, .h4{
+  font-size: calc(18rem/16);
+}
+h5, .h5{
+  font-size: calc(16rem/16);
+}
+h6, .h6{
+  font-size: calc(14rem/16);
 }
 
 @import "bootstrap/scss/bootstrap";

@@ -34,21 +34,26 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-light justify-content-between bg-primary">
+        <nav class="navbar navbar-light justify-content-between js-navbar">
             <a class="navbar-brand" href="#">Navbar</a>
             <div>
                 <div class="navbar-nav flex-row">
+                    <!-- add links with different hrefs to ids here -->
                     <a class="nav-item nav-link active mr-4" href="#projects">Home</a>
-                    <a class="nav-item nav-link" href="#">Features</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="bg-light content-offset">
+    <div class="bg-light">
         <div class="position-relative mb-5">
             <div class="embed-responsive embed-responsive-hero">
-                <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item" alt="">
+                <picture class="embed-responsive-item">
+                    <source media="(max-width: 767px)" srcset="https://placeimg.com/767/767/any">
+                    <source media="(min-width: 768px)" srcset="https://placeimg.com/1920/580/any">
+                    <img src="https://placeimg.com/1920/580/any" alt="" class="img-fluid">
+                </picture>
+
             </div>
 
             <div class="hero-area__headline d-flex align-items-center">
@@ -61,8 +66,6 @@
         <div class="container content-block js-content-block" id="projects">
             <h2 class="text-secondary">noch ein title</h2>
             <div class="row">
-
-
                 <!-- copy this block as often as you like
                         just increment the number of projectModal1-->
                 <div class="col-12 col-md-4 mb-5 js-content-block">
@@ -143,58 +146,29 @@
             </div>
         </div>
 
-        <div class="bg-dark">
-            <div class="container content-block js-content-block js-skill-block py-5">
+        <div class="content-block">
+            <div class="bg-dark">
+                <div class="container js-content-block js-skill-block">
 
-                <h2>skillz</h2>
-                <div class="d-flex justify-content-around flex-wrap">
-                    <div class="js-skill text-white" data-skill="70">
-                        <div class="cont">
-                            <div class="cont-val js-cont-val">
+                    <h2>skillz</h2>
+                    <div class="d-flex justify-content-around flex-wrap">
+                        <!-- single skill-->
+                        <div class="js-skill text-white" data-skill="40">
+                            <div class="cont">
+                                <div class="cont-val js-cont-val">
+                                </div>
+                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                </svg>
                             </div>
-                            <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-                                <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-center">Maya</h4>
-                            <p>Da dann noch schönen Text</p>
-                        </div>
-                    </div>
-
-                    <div class="js-skill text-white" data-skill="30">
-                        <div class="cont">
-                            <div class="cont-val js-cont-val">
+                            <div>
+                                <h4 class="text-center">Maya</h4>
+                                <p>Da dann noch schönen Text</p>
                             </div>
-                            <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-                                <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="js-skill text-white" data-skill="95">
-                        <div class="cont">
-                            <div class="cont-val js-cont-val">
-                            </div>
-                            <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-                                <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="js-skill text-white" data-skill="100">
-                        <div class="cont">
-                            <div class="cont-val js-cont-val">
-                            </div>
-                            <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-                                <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="560px"></circle>
-                            </svg>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -203,23 +177,19 @@
                 <h2 class="text-secondary">Contact me!</h2>
                 <div class="d-flex flex-wrap justify-content-around py-3 my-md-5">
                     <a href="#">
-                        <img class="social-icon" src="./img/social/facebook.svg" alt="">
-                        <span class="sr-only">Check out my facebook page</span>
+                        <img class="social-icon" src="./img/social/facebook.svg" alt="Check out my facebook page">
                     </a>
 
                     <a href="#">
-                        <img class="social-icon" src="./img/social/facebook.svg" alt="">
-                        <span class="sr-only">Check out my LinkedIn page</span>
+                        <img class="social-icon" src="./img/social/facebook.svg" alt="Check out my facebook page">
                     </a>
 
                     <a href="#">
-                        <img class="social-icon" src="./img/social/facebook.svg" alt="">
-                        <span class="sr-only">Check out my Twitter page</span>
+                        <img class="social-icon" src="./img/social/facebook.svg" alt="Check out my facebook page">
                     </a>
 
                     <a href="#">
-                        <img class="social-icon" src="./img/social/facebook.svg" alt="">
-                        <span class="sr-only">Check out my Tinder page</span>
+                        <img class="social-icon" src="./img/social/facebook.svg" alt="Check out my facebook page">
                     </a>
                 </div>
             </div>
@@ -277,6 +247,7 @@
                                     vitae?
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <div class="embed-responsive embed-responsive-16by9">

@@ -9,7 +9,7 @@
     stroke-width: 1em;
 }
 .svg .bar {
-    stroke: #FF9F1E;
+    stroke: var(--color-skill);
 }
 
 

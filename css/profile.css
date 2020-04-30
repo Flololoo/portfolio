@@ -1,0 +1,12 @@
+@media all and (min-width: 768px){
+    .profile-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .profile-img--aligned{
+        width: 30%;
+        margin-left: auto;
+    }
+}
