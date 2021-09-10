@@ -4,7 +4,7 @@ import {skill} from './skill.js'
 // import './bootstrap.min.js';
 
 $(document).ready(function () {
-    skill();
+	skill();
 
     let $blocks = $('.js-content-block');
     $blocks.css('transform', 'translateY(' + $(window).height() / 6 + 'px)');
@@ -14,6 +14,26 @@ $(document).ready(function () {
         scrollContent($blocks);
         navbar();
     }, true /*Capture event*/);
+
+
+
+    document.querySelector('.js-aboutme').addEventListener('click', (e) => {
+        e.preventDefault();
+        const aboutme =  $('#about');
+        aboutme.css('transition-duration', '0ms');
+        aboutme.css('transform', 'translateY(0)');
+        document.getElementById('about').scrollIntoView();
+        aboutme.css('transition-duration', '1.4s');
+    });
+
+    document.querySelector('.js-projects').addEventListener('click', (e) => {
+        e.preventDefault();
+        const projects =  $('#projects');
+        projects.css('transition-duration', '0ms');
+        projects.css('transform', 'translateY(0)');
+        document.getElementById('projects').scrollIntoView();
+        projects.css('transition-duration', '1.4s');
+    });
 });
 
 function navbar() {
@@ -57,3 +77,7 @@ function scrollContent($blocks) {
         }
     } );
 }
+
+$('.project-modal').on('hide.bs.modal', (e) => {
+    $('.project-modal__body').scrollTop(0);
+});

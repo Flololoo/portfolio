@@ -6,7 +6,9 @@ Author: Florian Müllner
 /*@import "scss/bootstrap.scss";*/
 /*@import "scss/variable.scss";*/
 
+
 @import "css/variables.css";
+@import "css/font.css";
 @import "css/skill.css";
 @import "css/modal.css";
 @import "css/projectTeaser.css";
@@ -17,6 +19,13 @@ Author: Florian Müllner
 /*
     some other stuff i don't have extra files for
 */
+:root{
+    --main-yellow: #fddc79;
+    --main-turkis: #b6e4dc;
+    --main-magenta: #b095a9;
+    --main-lila: #8786b4;
+}
+
 body{
     box-sizing: border-box;
 }
@@ -27,18 +36,51 @@ header{
     left: 0;
     right: 0;
 }
+.font-more-weight{
+    font-weight: 800;
+}
+.font-color-white{
+    color:white;
+}
+
+
 .navbar{
     transition-duration: .5s;
 }
 .content-block{
     padding-top: 2.5rem;
 }
+.bg-container-yellow{
+    background-color: var(--main-yellow);
+}
+.embed-responsive-favicons::before {
+    padding-top: 24.9%;
+}
+.embed-responsive-widevideo::before {
+    padding-top: 41.8%;
+}
 @media all and (min-width: 768px){
     .content-block{
-        padding-top: 5rem;
+        padding-top: 6rem;
+    }
+    .content-block.content-block--first{
+        padding-top: 3rem;
     }
 }
 
+@media all and (max-width: 767px){
+    .content-block {
+        padding-top: 6rem;
+        margin-top: -3.5rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .modal-dialog {
+        max-width: calc(100% - 14px);
+        margin: 1.75rem auto;
+    }
+}
 
 .js-content-block{
     opacity: 0;

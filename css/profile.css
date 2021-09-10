@@ -2,7 +2,7 @@
     .profile-img{
         position: absolute;
         top: 0;
-        right: 0;
+        right: 10%;
         left: 0;
     }
     .profile-img--aligned{

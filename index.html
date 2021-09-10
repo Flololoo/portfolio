@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="de">
+
 <head>
 
     <meta charset="UTF-8">
@@ -12,7 +13,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Hier ein cooler title</title>
+    <title>Jacqueline Lowe - Multimedia Artist</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -23,7 +24,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -31,116 +32,197 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
 
     <header>
         <nav class="navbar navbar-light justify-content-between js-navbar">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#"><img src="./img/lowe-logo.svg" alt="Logo" width="100px"></a>
             <div>
                 <div class="navbar-nav flex-row">
                     <!-- add links with different hrefs to ids here -->
-                    <a class="nav-item nav-link active mr-4" href="#projects">Home</a>
+                    <a class="nav-item nav-link active mr-4 h4 font-more-weight " href="#projects">PROJECTS</a>
+                    <a class="nav-item nav-link active mr-4 h4 font-more-weight js-aboutme" href="#about">ABOUT ME</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <div class="bg-light">
-        <div class="position-relative mb-5">
+        <div class="position-relative">
             <div class="embed-responsive embed-responsive-hero">
-                <picture class="embed-responsive-item">
-                    <source media="(max-width: 767px)" srcset="https://placeimg.com/767/767/any">
-                    <source media="(min-width: 768px)" srcset="https://placeimg.com/1920/580/any">
-                    <img src="https://placeimg.com/1920/580/any" alt="" class="img-fluid">
-                </picture>
+                <video autoplay muted loop class="embed-responsive-item">
+                    <source media="all and (min-width:768px)" src="./video/heroarea_tall_1920.mp4" type="video/mp4">
+                </video>
 
-            </div>
-
-            <div class="hero-area__headline d-flex align-items-center">
-                <div class="container">
-                    <h1 class="text-uppercase hero-area__headline-text text-primary">hero area!</h1>
-                </div>
             </div>
         </div>
 
-        <div class="container content-block js-content-block" id="projects">
-            <h2 class="text-secondary">noch ein title</h2>
+
+        <div class="container content-block content-block--first js-content-block" id="projects">
+            <div class="d-flex flex-column align-items-left bg-grey">
+                <h1 class="mb-0 text-left position-relative projects-headline text-secondary">Projects</h1>
+                <p class="mb-0">Check out some of my latest projects!</p>
+            </div>
+            <div class="d-flex flex-column align-items-center my-3 js-content-block">
+                <img src="img/maus.png" width="40px" class="text-center">
+            </div>
             <div class="row">
                 <!-- copy this block as often as you like
-                        just increment the number of projectModal1-->
+                            just increment the number of projectModal1, modals -->
+                <div class="col-12 col-md-4 mb-5 js-content-block">
+                    <button type="button" class="btn btn-unstyled p-0 w-100 border-0">
+                        <div data-toggle="modal" data-target="#projectModal7"
+                            class="embed-responsive embed-responsive-1by1 project-teaser">
+                            <img src="img/wrs/wrs_title_500px.png" class="embed-responsive-item img-zoom" alt="videogame, a skiing person">
+
+                            <div class="project-teaser__text">Winter Resort Simulator <br>Season 2</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-12 col-md-4 mb-5 js-content-block">
+                    <button type="button" class="btn btn-unstyled p-0 w-100 border-0">
+                        <div data-toggle="modal" data-target="#projectModal1"
+                            class="embed-responsive embed-responsive-1by1 project-teaser">
+                            <img src="./img/taiji-image1_1by1_500px.png" class="embed-responsive-item img-zoom"
+                                alt="screenshot out of the movie">
+
+                            <div class="project-teaser__text">Taiji</div>
+                        </div>
+                    </button>
+                </div>
                 <div class="col-12 col-md-4 mb-5 js-content-block">
                     <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
-                        <div data-toggle="modal" data-target="#projectModal1"
-                             class="embed-responsive embed-responsive-1by1 project-teaser">
-                            <img src="https://placeimg.com/400/400/any" class="embed-responsive-item img-zoom" alt="">
+                        <div data-toggle="modal" data-target="#projectModal2"
+                            class="embed-responsive embed-responsive-1by1 project-teaser">
+                            <img src="./img/nanox-1by1-500px.png" class="embed-responsive-item img-zoom"
+                                alt="nanox title image">
 
-                            <div class="project-teaser__text">read more</div>
+                            <div class="project-teaser__text">NaN0x</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-12 col-md-4 mb-5 js-content-block">
+                    <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
+                        <div data-toggle="modal" data-target="#projectModal3"
+                            class="embed-responsive embed-responsive-1by1 project-teaser">
+                            <img src="./img/vogl/vogl-title(1).png" class="embed-responsive-item img-zoom"
+                                alt="black font on white with title">
+
+                            <div class="project-teaser__text">Hast an Vogl?!</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-12 col-md-4 mb-5 js-content-block">
+                    <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
+                        <div data-toggle="modal" data-target="#projectModal4"
+                            class="embed-responsive embed-responsive-1by1 project-teaser">
+                            <img src="./img/gemeinsam-erleben-1by1-500px.jpg" class="embed-responsive-item img-zoom"
+                                alt="men lying on table">
+
+                            <div class="project-teaser__text">Gemeinsam <br>Erleben</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-12 col-md-4 mb-5 js-content-block">
+                    <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
+                        <div data-toggle="modal" data-target="#projectModal5"
+                            class="embed-responsive embed-responsive-1by1 project-teaser">
+                            <img src="./img/jams/jams-title-500px.jpg" class="embed-responsive-item img-zoom"
+                                alt="title image of jams">
+
+                            <div class="project-teaser__text">Gamejams & Animationjams</div>
+                        </div>
+                    </button>
+                </div>
+                <div class="col-12 col-md-4 mb-5 js-content-block">
+                    <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
+                        <div data-toggle="modal" data-target="#projectModal6"
+                            class="embed-responsive embed-responsive-1by1 project-teaser">
+                            <img src="img/machinery-500px.png" class="embed-responsive-item img-zoom" alt="screenshot of title machinery">
+
+                            <div class="project-teaser__text">Machinery</div>
                         </div>
                     </button>
                 </div>
             </div>
         </div>
 
+        <hr>
 
         <div class="position-relative content-block js-content-block">
             <div class="profile-img">
                 <div class="profile-img--aligned js-profile-img--aligned">
-                    <div class="embed-responsive embed-responsive-4by3 js-profile-img--parallax">
-                        <img src="https://placeimg.com/400/300/any" class="embed-responsive-item" alt="">
+                    <div class="embed-responsive embed-responsive-1by1 js-profile-img--parallax mb-3">
+                        <img src="./img/me.png" class="embed-responsive-item" alt="portrait">
                     </div>
+                    <div class=" js-profile-img--parallax mb-4" style="display: flex; justify-content: center;">
+                        <img src="./img/herz.png" class="" alt="herz">
+                    </div>
+                    <div class="embed-responsive embed-responsive-favicons js-profile-img--parallax">
+                        <img src="./img/icons.png" class="embed-responsive-item" alt="icons">
+                    </div>
+                    <!--<div class="embed-responsive embed-responsive-1by1 js-profile-img--parallax">
+                        <img src="./img/icons_images.png" class="embed-responsive-item" alt="programm icons">
+                    </div>-->
+
                 </div>
             </div>
-            <div class="container">
+            <div class="container" id="about">
                 <div class="row no-gutters js-profile-container">
                     <div class="col-12 col-md-6 order-2 order-md-1">
                         <div class="h-100 d-flex flex-column justify-content-center mt-3 mt-md-0">
-                            <h2 class="text-secondary">title</h2>
+                            <h2 class="text-secondary mb-4">About Me</h2>
 
-                            <ul>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                                <li>skajdn asdhbdha</li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, autem consectetur
-                                eligendi
-                                fugit, iusto laudantium molestiae nam nesciunt non quasi quisquam quo quod repellat saepe
-                                sed
-                                similique unde vel voluptate.</p>
+                            <p>Hello everyone! My name is <b>Jacqueline Lowe</b> and I finished my studies in Digital Arts (masters degree) last year.
+                                I am now looking for a new place to learn, work and contribute to amazing project with my knowledge!
+                                I love to work on all kinds of digital design projects,
+                                especially working in the Games Industry, 3D Design and Animation.
+                                I am also fluent in graphic design and motion design - an allrounder so to say!
+                                Just send me a message if you are interested to work with me!
+                            </p>
+
+                            <h3 class="text-primary mb-3">Getting to know me</h3>
+                            <p class="mb-5">A passionate coffee-lover who likes to see the world from a new perspective.
+                                Admires innovative and new art styles
+                                and loves to learn more about upcoming design trends. Currently practicing digtal
+                                painting and attending online courses
+                                to expand my knowledge about art! I love to get rid of my excess energy during long
+                                walks with my dog or intense exercise.
+                            </p>
+                            <h2 class="text-secondary mb-4">Experience</h2>
+
+                            <h4 class="text-primary mb-2">HR-Innoways | Multimedia Artist</h4>
+
+                            <p><b>(06/2020 - 08/2021)</b><br>Working as part of a small team in a dynamic start-up,
+                                developing a simulator game for PC (released in December 2020).
+                                Responsible for character design, asset creation, texturing, integration of characters
+                                in unity. Supporting community and managing bugs.
+                                Assisting release by creating video material, screenshots and animations, designing the
+                                graphics for Steam and marketing.
+                                Created in-house marketing materials such as business cards and similar. Using Unity,
+                                Blender, Adobe Suite and Substance Painter on a daily
+                                basis.
+                            </p>
+
+                            <h4 class="text-primary mb-2">Tutor for 3D-Animation/3D-Design | University of Applied
+                                Sciences Upper Austria</h4>
+                            <p><b>(02/2020 - 06/2020)</b><br>Supporting students in 3D-Animation, 3D-Design, Problem
+                                solving, controlling their tasks, holding tutorials
+                            </p>
+
+                            <h4 class="text-primary mb-2">Intern as Graphic/Multimedia-Artist</h4>
+
+                            <p><b>(03/2018 - 06/2018)</b><br>Creation of presentation videos of current and past
+                                projects, designing a screendesign for a in-house project
+                            </p>
+
+                            <h4 class="text-primary mb-2">Intern in the technical Department</h4>
+
+                            <p><b>(06/2015 - 06/2015)</b><br>ORF Landesstudio Kärnten
+                            </p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -148,23 +230,80 @@
 
         <div class="content-block">
             <div class="bg-dark">
-                <div class="container js-content-block js-skill-block">
+                <div class="container js-content-block js-skill-block py-5">
 
-                    <h2>skillz</h2>
+                    <h2 class="font-more-weight font-color-white py-2">My favourite skills</h2>
                     <div class="d-flex justify-content-around flex-wrap">
                         <!-- single skill-->
-                        <div class="js-skill text-white" data-skill="40">
+                        <div class="js-skill text-white" data-skill="75">
                             <div class="cont">
                                 <div class="cont-val js-cont-val">
                                 </div>
-                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+                                        stroke-dashoffset="0"></circle>
+                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent"
+                                        stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="text-center">Maya</h4>
-                                <p>Da dann noch schönen Text</p>
+                                <h4 class="text-center font-color-white font-more-weight">Graphic Design</h4>
+                                <p class="text-center">Colors, Fonts, Layout, Retouch</p>
+                            </div>
+                        </div>
+                        <!-- second skill-->
+                        <div class="js-skill text-white" data-skill="95">
+                            <div class="cont">
+                                <div class="cont-val js-cont-val">
+                                </div>
+                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+                                        stroke-dashoffset="0"></circle>
+                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent"
+                                        stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-center font-color-white font-more-weight">3D Design & Games</h4>
+                                <p class="text-center">Modeling, Texturing, Unity</p>
+                            </div>
+                        </div>
+                        <!-- third skill-->
+                        <div class="js-skill text-white" data-skill="80">
+                            <div class="cont">
+                                <div class="cont-val js-cont-val">
+                                </div>
+                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+                                        stroke-dashoffset="0"></circle>
+                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent"
+                                        stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-center font-color-white font-more-weight">Video Editing</h4>
+                                <p class="text-center">Cutting, Filming, Photography</p>
+                            </div>
+                        </div>
+                        <!-- fourth skill-->
+                        <div class="js-skill text-white" data-skill="80">
+                            <div class="cont">
+                                <div class="cont-val js-cont-val">
+                                </div>
+                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+                                        stroke-dashoffset="0"></circle>
+                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent"
+                                        stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-center font-color-white font-more-weight">Motion Design</h4>
+                                <p class="text-center">Animation, Motion Graphics</p>
                             </div>
                         </div>
                     </div>
@@ -172,38 +311,32 @@
             </div>
         </div>
 
-        <div class="container content-block js-content-block">
-            <div class="contact-bar">
-                <h2 class="text-secondary">Contact me!</h2>
-                <div class="d-flex flex-wrap justify-content-around py-3 my-md-5">
-                    <a href="#">
-                        <img class="social-icon" src="./img/social/facebook.svg" alt="Check out my facebook page">
-                    </a>
-
-                    <a href="#">
-                        <img class="social-icon" src="./img/social/facebook.svg" alt="Check out my facebook page">
-                    </a>
-
-                    <a href="#">
-                        <img class="social-icon" src="./img/social/facebook.svg" alt="Check out my facebook page">
-                    </a>
-
-                    <a href="#">
-                        <img class="social-icon" src="./img/social/facebook.svg" alt="Check out my facebook page">
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 
-    <footer class="bg-primary py-4 content-block">
+    <footer class="bg-dark py-4 content-block">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <div>Logo</div>
-                <div>
-                    <div>Name</div>
-                    <div>Adresse</div>
-                    <div>Site by me :]</div>
+                <img src="./img/lowe-logo.svg" alt="Logo" width="100px">
+                <div class="font-color-white text-right">
+                    <h3 class="font-color-white"><b>Jacqueline Lowe</b></h3>
+                    <div class="color-font-white">jacquelinelowe96@gmail.com</div>
+                    <div>Adalbert-Stifter-Strasse, Wien</div>
+                    <div>Site by Florian Muellner & Jacqueline Lowe</div>
+                </div>
+            </div>
+            <div class="contact-bar">
+                <div class="d-flex flex-wrap justify-content-end my-md-1">
+                    <a href="#">
+                        <img class="social-icon" src="./img/social/linkedin.PNG" alt="Contact me on linkedIn">
+                    </a>
+
+                    <a href="#">
+                        <img class="social-icon" src="./img/social/instagram.PNG" alt="Check out art page">
+                    </a>
+
+                    <a href="#">
+                        <img class="social-icon" src="./img/social/behance.PNG" alt="Have a look at behance">
+                    </a>
                 </div>
             </div>
         </div>
@@ -218,12 +351,140 @@
 
     <!-- here is the rest
     -->
-    <div class="modal fade project-modal" id="projectModal1" tabindex="-1" role="dialog"
-         aria-labelledby="projectModal1" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+    <div class="modal fade project-modal" id="projectModal7" tabindex="-1" role="dialog" aria-labelledby="projectModal7"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <!-- modal-title w-100 font-more-weight text-center pl-4-->
+            <div class="modal-header project-modal__header">
+                <h3 class="modal-title text-right font-more-weight">Winter Resort Simulator Season 2 | Game Developing | Asset Creator | Unity </h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body px-0 project-modal__body position-relative">
+                <div class=" bg-gradient">
+                </div>
+                <div class="mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-6">
+                            <div class="embed-responsive embed-responsive-1by1">
+                                <img src="./img/wrs/500px-title-wrs.jpg" class="embed-responsive-item"
+                                    alt="person skiing on slope">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="px-md-3">
+                                <h3>Winter Resort Simulator Season 2</h3>
+                                <p>Winter Resort Simulator Season 2 is a realistic and authentic simulation of a ski resort.
+                                    All vehicles and ropeways are built close to their counterpart in the real world. 
+                                    The player takes the role of the manager of a ski resort. Snowcats, Ropeways and other vehicles
+                                    are waiting for the player to help with the daily tasks of the resort. The game is avaible on Steam for PC!</p>
+
+                                <h3>My part in the project</h3>
+                                    <p><ul>
+                                        <li><b>Character Design:</b> Sculpting, Retopo, Modeling, Texturing, Rigging, Animation, Integration into Unity</li>
+                                        <li><b>Asset Creation:</b> Modeling, Texturing, Integration into Unity</li>
+                                        <li><b>Texture Design:</b> Texturing in Substance of main assets like Ropeways, Ropeways Supports, Vehicles</li>
+                                        <li><b>UI Design:</b> Redesign of the main menu and sub-menues</li>
+                                        <li><b>Marketing:</b> Text writing, Screenshot preparation, Graphic Design</li>
+                                        <li><b>Support:</b> Supporting the community on Discord and Steam, Bug Reporting (Jira), creating and updating 
+                                            Texts for the Wiki belonging to the game, managing Community Authors on Wiki, Moderation on Discord
+                                        </li>
+                                    </ul></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <h3 class="mb-3 mx-3">Winter Resort Simulator - References</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img src="./img/wrs/vehicle-texturing-prinoth.jpg" class="embed-responsive-item"
+                        alt="picture of snow vehicle in game">
+                </div>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img src="./img/wrs/char_sheet_16to9.png" class="embed-responsive-item"
+                        alt="pictures of characters">
+                </div>
+
+                <div class="px-3 my-3">
+                    <h3>My journey in the project</h3>
+                    <p>I joined the team half a year before the anticipated release date. My task was to improve and expand the design of the game.
+                        The new version of the game needed a playable character, new UI, redesigned assets and ropeways. 
+                        At first, I started sculpting a male character base, created clothes and assets for it. 
+                        After that, I had to retopologize the character in order to meet the poly count needed that the game would run effortlessly. 
+                        That was kind of a challenge, because the game would need really low poly counts to run stable. 
+                        So I needed to use a workflow to preserve as many details as possible. 
+                        I baked details from high to low in Substance. After that, I hand painted the skin, clothes and created materials for the later use in Unity. 
+                        The same workflow was used for the female player character and NPCs as well - only with the difference that the NPCs needed LODs as well. 
+                        In the further course of the project, I was responsible for the new UI main menu design. 
+                    </p>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <img src="./img/wrs/wrs-ui-design.jpg" class="embed-responsive-item"
+                        alt="pictures of ui">
+                </div>
+                <div class="px-3 my-3">
+                    <p>The old UI needed an overhaul, so I took the challenge and started creating a new design for the updated version of the game. I took reference from 
+                        similar games and tried to create a design, that would fit into the genre of simulation games. I had no specific education in UI design, so I started
+                        teaching myself about it. I tried make it as simple as possible. The color scheme (dark grey, orange, white) fitted perfectly for the big tiles. I kept them 
+                        slightly transparent to make the background more apparent. The feeling of winter should be apparent in every aspect of the game, even in the main menu.
+                        I took the flasing orange color from the logo and used it as accent color. 
+                    </p>
+                    <h3>Texturing, texutring and more texturing...</h3>
+                    <p>
+                        Next to my work on the UI design and character, I started reworking some of the excisting textures and creating new textures for the brand new vehicles, 
+                        ropeways and other assets. For that I used Substance Painter. The game as simulation demanded a high grad of realism in the textures itself. I looked
+                        for references in the internet, searched for machines and materials and applied the knowledge in my work. I created textures for the new snow vehicle (Prinoth),
+                        a new ropeway that came into the game after the update, updated textures for the renewed NPCs and painted the skin of my characters.
+                    </p>
+                    <h3>Art meets Tech' Stuff: Rigging and Animation</h3>
+                    <p>
+                        After the update, the game featured visible characters due to the introduction of the multiplayer mode. So the two characters (named Bob and Alice), needed
+                        all the animations to explore the snowy mountains of Hallstein. I rigged the characters in Blender, weightpainted them and did the animations. We faced 
+                        some challenges with the integration inside of Unity (<span class="font-italic">because Blender -> Unity is pain sometimes. Oh boy, I learned that the hard way...</span>). I learned
+                        that I needed to keep a look at all the animations inside the fbx and if everyone is exported probably. With the achieved knowledge about the pain of
+                        exporting animation, I turned to Alice, the female character. I tried to make the rig more simple so it would export more easily. I applied the same
+                        animations I created for the male character, but changed them to fit them better to her body and female movement.
+                    </p>
+                </div>
+                <div class="embed-responsive embed-responsive-widevideo my-2">
+                    <video autoplay muted loop class="embed-responsive-item">
+                        <source media="all and (min-width:768px)" src="./video/charanim_wrs.mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="my-2">
+                    <div style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://www.youtube.com/embed/vhCdmatihc8?controls=0" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="px-3 my-3">
+                    <h3>After the release is before the release...</h3>
+                    <p>Another thing I learned was that the work does not stop when the game is released. 
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="modal fade project-modal" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
+                <!-- modal-title w-100 font-more-weight text-center pl-4-->
                 <div class="modal-header project-modal__header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h3 class="modal-title text-right font-more-weight">Taiji | 3D-Animation | Work in Progress</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -231,43 +492,98 @@
                 <div class="modal-body px-0 project-modal__body position-relative">
                     <div class=" bg-gradient">
                     </div>
-                    <div class="mb-5">
+                    <div class="mb-3">
                         <div class="row no-gutters">
                             <div class="col-12 col-md-6">
                                 <div class="embed-responsive embed-responsive-1by1">
-                                    <img src="https://placeimg.com/400/400/any"
-                                         class="embed-responsive-item" alt="">
+                                    <img src="./img/taiji-image1_1by1_500px.png" class="embed-responsive-item" alt="">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="pl-md-3">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquid
-                                    autem deserunt eveniet fugiat in labore magnam quisquam recusandae.
-                                    Facere nostrum optio repellendus velit veniam? Modi non quos rerum
-                                    vitae?
+                                <div class="px-md-3">
+                                    <h3>About Taiji</h3>
+                                    <p>Taiji is currently a work in progress project. This 3D animation movie project
+                                        originated during my
+                                        master studies (University of Applied Sciences Upper Austria - Digital Arts)
+                                        and is realized with the help of two other artists: <a
+                                            href="https://www.linkedin.com/in/corina-sand-452b2517a/">Corina Sand</a>
+                                        and <a href="https://www.linkedin.com/in/peter-weinlich">Peter Weinlich</a>.</p>
+
+                                    <h3>Story</h3>
+                                    <p>The movie is about a young monk whom we called Djin.
+                                        He follows an amulett which leads him through the forest to an old temple.
+                                        All vegetation is dead and weathered. In the temple he needs to execute a ritual
+                                        including the four
+                                        elements to bring nature back to life. The elements are embodied by four
+                                        statues, one for each element.
+                                        A bonsai in the middle of the temple represents nature. While Djin performs the
+                                        ritual, something goes wrong
+                                        and he risks his life to save it.</p>
+                                    <p>To give some insights into my project, you can find some examples of my work on
+                                        this project here.
+                                        At the moment, I am mainly responsible for animation. But at the conception
+                                        phase of Taiji, Corina and I
+                                        were both working on the over all concept and idea of the movie. It all started
+                                        with a simple idea of two
+                                        monchs on two tall mountains, controlling the elements in order to save their
+                                        own land.
+                                        The idea took on a life of its own and gradually transformed into the story as
+                                        it is now.
+                                    </p>
                                 </div>
                             </div>
 
                         </div>
                     </div>
+                    <h3 class="mb-3 mx-3">Concept | Modeling | Animation | Lighting & Rendering</h3>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <img src="https://placeimg.com/1920/1080/any" class="embed-responsive-item"
-                             alt="">
+                        <img src="./img/taiji-images1_16by9_720.png" class="embed-responsive-item"
+                            alt="test render of the movie">
                     </div>
 
-                    <div class="px-3">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                            quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                            repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                            veritatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                            quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                            repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                            veritatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore quaerat
-                            quisquam soluta velit vero, voluptas. Aliquid eius ipsum magnam numquam
-                            repudiandae tenetur veritatis? Doloribus incidunt laboriosam molestiae quos
-                            veritatis.</p>
+                    <div class="px-3 my-3">
+                        <p>This shot represents the desired look of the movie. We are still working on the final look
+                            and feel of the film.
+                            For the rendering Vray is used.
+                        </p>
+                    </div>
+                    <div class="embed-responsive embed-responsive-widevideo my-2">
+                        <video autoplay muted loop class="embed-responsive-item">
+                            <source media="all and (min-width:768px)" src="./video/anim_bsp_1000px.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="embed-responsive embed-responsive-widevideo my-2">
+                        <video autoplay muted loop class="embed-responsive-item">
+                            <source media="all and (min-width:768px)" src="./video/anim2_bsp_1000px.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="px-3 my-3">
+                        <p>These are two examples of my animation work, both examples are so called 'playplasts'
+                            (captures of the viewport of Maya) and do not
+                            represent the final look of the movie. We try to achieve a kind of realistic style with toon
+                            elements in animation.
+                            The character was rigged by me with the help of <a href="https://gumroad.com/l/dFNZv">Rapid
+                                Rig</a>. For face animation I added a
+                            face controller which controlls custom blend shapes (made by Corina in Maya).
+                        </p>
+                    </div>
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="./img/taiji-images2_16by9_720.png" class="embed-responsive-item"
+                            alt="some insights into the work">
+                    </div>
+                    <div class="px-3 my-3">
+                        <p>Statues, amuletts, elements and fauna in the movie of Taiji.
+                        </p>
+                    </div>
+                    <div class="px-3 my-3">
+                        <h3>Further plans</h3>
+                        <p>At the moment we are still working on the project. Updates will be posted in here. We are
+                            still having fun with this project
+                            and look forward to finish it! </p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -277,14 +593,446 @@
         </div>
     </div>
 
+    <div class="modal fade project-modal" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <!-- modal-title w-100 font-more-weight text-center pl-4-->
+                <div class="modal-header project-modal__header">
+                    <h3 class="modal-title text-right font-more-weight">NaN0x - an interactive experience | Art
+                        Installation | Interactive Art </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-0 project-modal__body position-relative">
+                    <div class=" bg-gradient">
+                    </div>
+                    <div class="mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6">
+                                <div class="embed-responsive embed-responsive-1by1">
+                                    <img src="./img/nanox-1by1-500px.png" class="embed-responsive-item"
+                                        alt="Project screening of NaNox">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="px-md-3">
+                                    <h3>About NaN0x</h3>
+                                    <p>NaN0x is some kind of Artificial Intelligence which tries to communicate with
+                                        human beings about what she wants.
+                                        Different visual and audio-visual cues indicate how NaN0x currently feels. If
+                                        nobody does what NaN0x wants,
+                                        she will start to get angry. NaN0x impatiently waits for the present people to
+                                        fulfill her will and will react even angrier than before -
+                                        until her system crashes and reboots. If the people achieve to make NaN0x happy,
+                                        it won’t take long until she has new demands for them.</p>
 
-    <script
-            src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
-            integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs="
-            crossorigin="anonymous"></script>
+                                    <h3>Idea behind</h3>
+                                    <p>In recent years AI and algorithms have taken over our day to day life. Smart Home
+                                        devices for example help us with everyday tasks, but sometimes they do not
+                                        understand us,
+                                        which causes us to repeat ourselves over and over again. We even try to
+                                        pronounce the sentence differently and wrong so that we are understood by the
+                                        AI.
+                                        Other systems like self-driving cars do the parking for us, smart assistants on
+                                        smartphones plan our calendar.
+                                        These are just some examples of how we hand over control over our lives to
+                                        machines. .</p>
+                                    <p>To give some insights into my project, you can find some examples of my work on
+                                        this project here.
+                                        At the moment, I am mainly responsible for animation. But at the conception
+                                        phase of Taiji, Corina and I
+                                        were both working on the over all concept and idea of the movie. It all started
+                                        with a simple idea of two
+                                        monchs on two tall mountains, controlling the elements in order to save their
+                                        own land.
+                                        The idea took on a life of its own and gradually transformed into the story as
+                                        it is now.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <h3 class="mb-3 mx-3">Dokumentation of NaN0x</h3>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="./img/nanox-5img-16by9.png" class="embed-responsive-item"
+                            alt="screening of NaN0x in Ars Electronica">
+                    </div>
+
+                    <div class="px-3 my-3">
+                        <h3>Technical realization</h3>
+                        <p>NaN0x is a project for the Deep Space in the Ars Electronica Center and requires its people
+                            tracking and wall and floor projection techniques.
+                            The project was realized in Processing. The biggest part of the project was to work out the
+                            idea behind and how to
+                            communicate it to the people participating in this experience. Of course, NaNox needed to be
+                            appealing so we looked out for a vibe that
+                            makes the player believe, that NaNox is an actual AI.
+                            This project was realized in my Master's Study Digital Arts with my project partner Johannes
+                            Lugstein.
+                            He was also responsible for the coding part, helping out with the more difficult part of it.
+                            We both were responsible for developing the idea and realizing the whole project.
+                        </p>
+                    </div>
+                    <div class="my-2">
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe src="https://player.vimeo.com/video/398561866?byline=0"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- dritter block-->
+    <div class="modal fade project-modal" id="projectModal3" tabindex="-1" role="dialog" aria-labelledby="projectModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <!-- modal-title w-100 font-more-weight text-center pl-4-->
+                <div class="modal-header project-modal__header">
+                    <h3 class="modal-title text-right font-more-weight">Hast an Vogl?! | 2D-Animation | frame by frame
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-0 project-modal__body position-relative">
+                    <div class=" bg-gradient">
+                    </div>
+                    <div class="mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6">
+                                <div class="embed-responsive embed-responsive-1by1">
+                                    <img src="./img/vogl/vogl2.jpg" class="embed-responsive-item"
+                                        alt="Screenshot from the movie">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="px-md-3">
+                                    <h3>About 'Hast an Vogl?!</h3>
+                                    <p>This project was created in the course of the study "Digital Arts" at the
+                                        University of Applied Sciences Hagenberg.
+                                        With the help of two fellow students we produced this hand-drawn animation
+                                        within 3 months.</p>
+
+                                    <h3>Idea behind</h3>
+                                    <p>Every person has their rough edges. Some are more closed, so these special sides
+                                        show up less often in these people and are more
+                                        difficult to recognize. Sometimes you can't stand these sides of yourself or
+                                        suffer from them. In this story we want to tell
+                                        that one can be a lovable personality just because of these peculiarities.</p>
+                                    <p>We animated our movie with the help of Adobe Animate and After Effects. Each
+                                        frame is hand drawn (12 frames per second), as well
+                                        as the backgrounds in the movie. We tried to use a neutral color palette to
+                                        convey a calm mood. I was responsible for the audio and
+                                        sound design as well. For that I used the in-house equipment of the university
+                                        to create the sounds, mix them and underlay the animation with them.
+                                        On the bottom you can find the finished movie, enjoy!
+                                    </p>
+                                    <h3>Challenges</h3>
+                                    <p>Animating frame by frame was quite a new challenge for me personally. I always
+                                        worked
+                                        in 3D animation, where you can move your characters around freely. But every
+                                        frame had to
+                                        be drawn by hand, so it required consistency during drawing the characters and
+                                        movements.
+                                        During that project I found a hidden love to hand animated movies and really
+                                        enjoyed the process.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-2">
+                        <video autoplay muted loop class="embed-responsive-item">
+                            <source media="all and (min-width:768px)" src="./video/vogl_handanim.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 class="mb-3 mx-3">2D-Animation 'Hast an Vogl?!'</h3>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="./img/vogl/bgs_big.jpg" class="embed-responsive-item"
+                            alt="screening of NaN0x in Ars Electronica">
+                    </div>
+
+                    <div class="my-2">
+                        <div style="padding:56.25% 0 0 0;position:relative;">
+                            <iframe src="https://player.vimeo.com/video/316505615?byline=0"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- vierter block-->
+    <div class="modal fade project-modal" id="projectModal4" tabindex="-1" role="dialog" aria-labelledby="projectModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <!-- modal-title w-100 font-more-weight text-center pl-4-->
+                <div class="modal-header project-modal__header">
+                    <h3 class="modal-title text-right font-more-weight">Gemeinsam erleben | Art Concept | Motion Design
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-0 project-modal__body position-relative">
+                    <div class=" bg-gradient">
+                    </div>
+                    <div class="mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6">
+                                <div class="embed-responsive embed-responsive-1by1">
+                                    <img src="./img/gemeinsam-erleben-1by1-500px.jpg" class="embed-responsive-item"
+                                        alt="conecpt art from project">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="px-md-3">
+                                    <h3>About 'Gemeinsam erleben'</h3>
+                                    <p>I was allowed to realize a presentation video for the social media platform
+                                        "Gemeinsam Erleben".
+                                        The project offers a platform for adventurous people who want to make new
+                                        contacts and get to learn new people.
+                                        New contacts are used to share hobbies together.
+                                        The video can be found on the <a
+                                            href="https://gemeinsamerleben.com/about">website of the project</a> and on
+                                        the
+                                        bottom of this page.
+                                    </p>
+
+                                    <h3>Concept</h3>
+                                    <p>The video should also tell this story, so it was divided into three acts.
+                                        The first one shows rather bored people who obviously long for excitement and
+                                        adventure.
+                                        This look was reinforced by overdrawing the characters in black and white.
+                                        After that, the explanation of the project should take place. Here, attention
+                                        was paid to
+                                        clips that showed happier people. To bring momentum into the video, I relied on
+                                        jump cuts here.
+                                        The climax of the video consists of full video clips of people experiencing
+                                        something.
+                                        Since the platform covers many different areas of leisure and hobbies, the video
+                                        should be clear and
+                                        understandable for every user. The style should be simplistic and speaking. I
+                                        decided to go for a sticker
+                                        look and fast animations. In terms of color, I stuck to the basic design of
+                                        "Experience Together". Further
+                                        colors were discussed with the client, but I was oriented towards bright,
+                                        contrasting colors.</p>
+                                </div>
+                            </div>
+                            <div class="my-2 embed-responsive embed-responsive-16by9">
+                                <img src="./img/gemeinsam-erleben_concept-16by9.jpg" class="embed-responsive-item"
+                                    alt="concept of the video">
+                            </div>
+                            <p class="px-md-3 my-2">
+                                You can see the first designs that were made for the client. Here the sticker look was
+                                tested and demontrated.
+                                In addition, a feeling for the flow of the animations should be conveyed (video,
+                                freezing, overdrawing, text).
+                                The video itself was then implemented using Photoshop and After Effects. The graphics
+                                that came from the videos were
+                                first edited and then cut back together with the original clips. The tricky part here
+                                was the right timing of the texts and animations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-2">
+                        <video controls preload="none" class="embed-responsive-item" poster="img/placeholder-ge.png">
+                            <source media="all and (min-width:768px)" src="./video/Gemeinsam_Erleben.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fünfter block-->
+    <div class="modal fade project-modal" id="projectModal5" tabindex="-1" role="dialog" aria-labelledby="projectModal5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <!-- modal-title w-100 font-more-weight text-center pl-4-->
+                <div class="modal-header project-modal__header">
+                    <h3 class="modal-title text-right font-more-weight">Participating in 'Jams' | Fun | Motivation
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-0 project-modal__body position-relative">
+                    <div class=" bg-gradient">
+                    </div>
+                    <div class="mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6">
+                                <div class="embed-responsive embed-responsive-1by1">
+                                    <img src="./img/jams/meatjam.jpg" class="embed-responsive-item"
+                                        alt="person in front of pc">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="px-md-3">
+                                    <h3>About Gamejams and Animatonjams</h3>
+                                    <p>A game jam is a contest where participants try to make a video game from scratch.
+                                        Depending on the format, participants might work independently, or in teams. The
+                                        contest duration usually ranges from 24 to 72 hours.
+                                        Participants are generally programmers, game designers, artists, writers, and
+                                        others in game development-related fields.
+                                        An animation jam works just the same. The focus here is on creating a short animation movie
+                                        instead of creating a game. During my studies in Hagenberg, I participated in multiple jams.
+                                        In summary, we created four games and three animation shorts during all of the jams.
+                                    </p>
+
+                                    <h3>Work</h3>
+                                    <p>Most of the time, I was responsible for the art part of these short projects.
+                                        In the nature of these jams that you take action in various parts of the project
+                                        to complete it as fast as you can.
+                                        So created the concepts, storyboards, designs of world and characters. I spend time
+                                        animating characters in Maya and building levels in Unity. I created and edited different 
+                                        sounds to accentuate the right mood in the recording studio with Logic. But best of all 
+                                        was the fun of the project itself and the people you are working with!
+                                        You can find some of these projects on the bottom, enjoy!
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-2">
+                        <video controls preload="none" class="embed-responsive-item" poster="img/jams/flushed_klein_placeholder.jpg">
+                            <source media="all and (min-width:768px)" src="./video/flushed_klein.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-2">
+                        <video controls preload="none" class="embed-responsive-item" poster="img/jams/santababy_klein_placeholder.jpg">
+                            <source media="all and (min-width:768px)" src="./video/santababy_klein.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-2">
+                        <video controls preload="none" class="embed-responsive-item" poster="img/jams/droja_klein_placehodler.jpg">
+                            <source media="all and (min-width:768px)" src="./video/droja_klein.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-2">
+                        <video controls preload="none" class="embed-responsive-item" poster="img/jams/pivatespatz_placeholder.jpg">
+                            <source media="all and (min-width:768px)" src="./video/PoopForce_PrivateSpatz_Screening_klein.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-2">
+                        <video controls preload="none" class="embed-responsive-item" poster="img/jams/alexa_klein_placeholder.jpg">
+                            <source media="all and (min-width:768px)" src="./video/alexa_klein.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-2">
+                        <video controls preload="none" class="embed-responsive-item" poster="img/jams/winwinamun_small_placeholder.jpg">
+                            <source media="all and (min-width:768px)" src="./video/winwinamun_small.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sechster block-->
+    <div class="modal fade project-modal" id="projectModal6" tabindex="-1" role="dialog" aria-labelledby="projectModal6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <!-- modal-title w-100 font-more-weight text-center pl-4-->
+                <div class="modal-header project-modal__header">
+                    <h3 class="modal-title text-right font-more-weight">Machinery | Sound Design | Film Project
+                    </h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body px-0 project-modal__body position-relative">
+                    <div class=" bg-gradient">
+                    </div>
+                    <div class="mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-6">
+                                <div class="embed-responsive embed-responsive-1by1">
+                                    <img src="./img/machinery-500px.png" class="embed-responsive-item"
+                                        alt="img from movie">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="px-md-3">
+                                    <h3>About Machinery</h3>
+                                    <p>Machinery was created during my studies for the master programm Digital Arts at the university
+                                        of applied sciences upper austria. It was produced together with a fellow student
+                                        Corina Sand. At first, we were given a audio file. We had to create a short movie that fits the 
+                                        overall mood of the clip. After that, the next step to create a new audio design for our movie.
+                                        For that, we used the in house studio at our university. We recorded sounds like violins and screams
+                                        and mixed them together. 
+                                    </p>
+
+                                    <h3>The mood</h3>
+                                    <p>Machinery tells the story of a fustrated artist, searching for inspiration in his own work. During the 
+                                        movie, the artist struggels with aggression towards his own art. Realising his anger, he throws
+                                        colors onto his canvas - maybe creating one of his best artworks in lifetime.                                        
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-2">
+                        <video controls preload="none" class="embed-responsive-item" poster="img/machinery_Moment.jpg">
+                            <source media="all and (min-width:768px)" src="./video/machinery_small.mp4"
+                                type="video/mp4">
+                        </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+        integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
 
     <script type="module" src="js/scripts.js"></script>
 
-</body>
-</html>
 
+    <!-- Scripts bois-->
+    <script defer src="https://player.vimeo.com/api/player.js"></script>
+</body>
+
+</html>

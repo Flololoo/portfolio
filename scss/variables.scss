@@ -1,7 +1,7 @@
-$primary:       #123456;
-$secondary:     red;
+$primary:       #4F4A54;
+$secondary:     #76a199;
 
-$gray-900:      #333;
+$gray-900:      #4F4A54;
 
 $border-radius:               .25rem;
 $border-radius-lg:            .3rem;
@@ -10,11 +10,11 @@ $border-radius-sm:            .2rem;
 $container-max-widths: (
         md: 720px,
         lg: 960px,
-        xl: 1400px
+        xl: 1100px
 );
 
 :root{
-  --color-skill: #ff0000;
+  --color-skill: #a9e4da;
 }
 
 /* fonts */
@@ -24,15 +24,18 @@ h1, h2, h3, h4, h5, h6,
   color: $secondary;
 }
 
+@import "bootstrap/scss/bootstrap";
+
+
 body{
   font-size: calc(16rem/16);
 }
 
 h1, .h1{
-  font-size: calc(32rem/16);
+  font-size: calc(55rem/16);
 }
 h2, .h2{
-  font-size: calc(30rem/16);
+  font-size: calc(32rem/16);
 }
 h3, .h3{
   font-size: calc(24rem/16);
@@ -41,10 +44,8 @@ h4, .h4{
   font-size: calc(18rem/16);
 }
 h5, .h5{
-  font-size: calc(16rem/16);
+  font-size: calc(15rem/16);
 }
 h6, .h6{
   font-size: calc(14rem/16);
 }
-
-@import "bootstrap/scss/bootstrap";
