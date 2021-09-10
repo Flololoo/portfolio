@@ -37,7 +37,9 @@
 
     <header>
         <nav class="navbar navbar-light justify-content-between js-navbar">
-            <a class="navbar-brand" href="#"><img src="./img/lowe-logo.svg" alt="Logo" width="100px"></a>
+            <a class="navbar-brand" href="#">
+                <img loading=lazy class="mobile-logo" src="./img/lowe-logo.svg" alt="Logo" width="100px">
+            </a>
             <div>
                 <div class="navbar-nav flex-row">
                     <!-- add links with different hrefs to ids here -->
@@ -50,22 +52,26 @@
 
     <div class="bg-light">
         <div class="position-relative">
-            <div class="embed-responsive embed-responsive-hero">
+            <div class="embed-responsive embed-responsive-hero d-none d-md-block">
                 <video autoplay muted loop class="embed-responsive-item">
-                    <source media="all and (min-width:768px)" src="./video/heroarea_tall_1920.mp4" type="video/mp4">
+                    <source src="./video/heroarea_tall_1920.mp4" type="video/mp4">
                 </video>
-
+            </div>
+            <div class="embed-responsive embed-responsive-hero d-md-none">
+                <video autoplay muted loop class="embed-responsive-item">
+                    <source src="./video/heroarea_mobilformat.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
 
 
         <div class="container content-block content-block--first js-content-block" id="projects">
-            <div class="d-flex flex-column align-items-left bg-grey">
-                <h1 class="mb-0 text-left position-relative projects-headline text-secondary">Projects</h1>
+            <div class="d-flex flex-column align-items-center">
+                <h1 class="mb-3 text-center position-relative projects-headline text-secondary">Projects</h1>
                 <p class="mb-0">Check out some of my latest projects!</p>
             </div>
             <div class="d-flex flex-column align-items-center my-3 js-content-block">
-                <img src="img/maus.png" width="40px" class="text-center">
+                <img loading=lazy src="img/maus.png" width="40px" class="text-center">
             </div>
             <div class="row">
                 <!-- copy this block as often as you like
@@ -74,7 +80,7 @@
                     <button type="button" class="btn btn-unstyled p-0 w-100 border-0">
                         <div data-toggle="modal" data-target="#projectModal7"
                             class="embed-responsive embed-responsive-1by1 project-teaser">
-                            <img src="img/wrs/wrs_title_500px.png" class="embed-responsive-item img-zoom" alt="videogame, a skiing person">
+                            <img loading=lazy src="img/wrs/wrs_title_500px.png" class="embed-responsive-item img-zoom" alt="videogame, a skiing person">
 
                             <div class="project-teaser__text">Winter Resort Simulator <br>Season 2</div>
                         </div>
@@ -84,7 +90,7 @@
                     <button type="button" class="btn btn-unstyled p-0 w-100 border-0">
                         <div data-toggle="modal" data-target="#projectModal1"
                             class="embed-responsive embed-responsive-1by1 project-teaser">
-                            <img src="./img/taiji-image1_1by1_500px.png" class="embed-responsive-item img-zoom"
+                            <img loading=lazy src="./img/taiji-image1_1by1_500px.png" class="embed-responsive-item img-zoom"
                                 alt="screenshot out of the movie">
 
                             <div class="project-teaser__text">Taiji</div>
@@ -95,7 +101,7 @@
                     <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
                         <div data-toggle="modal" data-target="#projectModal2"
                             class="embed-responsive embed-responsive-1by1 project-teaser">
-                            <img src="./img/nanox-1by1-500px.png" class="embed-responsive-item img-zoom"
+                            <img loading=lazy src="./img/nanox-1by1-500px.png" class="embed-responsive-item img-zoom"
                                 alt="nanox title image">
 
                             <div class="project-teaser__text">NaN0x</div>
@@ -106,7 +112,7 @@
                     <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
                         <div data-toggle="modal" data-target="#projectModal3"
                             class="embed-responsive embed-responsive-1by1 project-teaser">
-                            <img src="./img/vogl/vogl-title(1).png" class="embed-responsive-item img-zoom"
+                            <img loading=lazy src="./img/vogl/vogl-title(1).png" class="embed-responsive-item img-zoom"
                                 alt="black font on white with title">
 
                             <div class="project-teaser__text">Hast an Vogl?!</div>
@@ -117,7 +123,7 @@
                     <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
                         <div data-toggle="modal" data-target="#projectModal4"
                             class="embed-responsive embed-responsive-1by1 project-teaser">
-                            <img src="./img/gemeinsam-erleben-1by1-500px.jpg" class="embed-responsive-item img-zoom"
+                            <img loading=lazy src="./img/gemeinsam-erleben-1by1-500px.jpg" class="embed-responsive-item img-zoom"
                                 alt="men lying on table">
 
                             <div class="project-teaser__text">Gemeinsam <br>Erleben</div>
@@ -128,7 +134,7 @@
                     <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
                         <div data-toggle="modal" data-target="#projectModal5"
                             class="embed-responsive embed-responsive-1by1 project-teaser">
-                            <img src="./img/jams/jams-title-500px.jpg" class="embed-responsive-item img-zoom"
+                            <img loading=lazy src="./img/jams/jams-title-500px.jpg" class="embed-responsive-item img-zoom"
                                 alt="title image of jams">
 
                             <div class="project-teaser__text">Gamejams & Animationjams</div>
@@ -139,7 +145,7 @@
                     <button type="button" class="btn btn-unstyled p-0 w-100 border-0    ">
                         <div data-toggle="modal" data-target="#projectModal6"
                             class="embed-responsive embed-responsive-1by1 project-teaser">
-                            <img src="img/machinery-500px.png" class="embed-responsive-item img-zoom" alt="screenshot of title machinery">
+                            <img loading=lazy src="img/machinery-500px.png" class="embed-responsive-item img-zoom" alt="screenshot of title machinery">
 
                             <div class="project-teaser__text">Machinery</div>
                         </div>
@@ -150,20 +156,20 @@
 
         <hr>
 
-        <div class="position-relative content-block js-content-block">
+        <div class="position-relative content-block js-content-block pt-0" style="margin-top: 3rem">
             <div class="profile-img">
-                <div class="profile-img--aligned js-profile-img--aligned">
+                <div class="profile-img--aligned js-profile-img--aligned mx-3 mx-md-0">
                     <div class="embed-responsive embed-responsive-1by1 js-profile-img--parallax mb-3">
-                        <img src="./img/me.png" class="embed-responsive-item" alt="portrait">
+                        <img loading=lazy src="./img/me.png" class="embed-responsive-item" alt="portrait">
                     </div>
                     <div class=" js-profile-img--parallax mb-4" style="display: flex; justify-content: center;">
-                        <img src="./img/herz.png" class="" alt="herz">
+                        <img loading=lazy src="./img/herz.png" class="" alt="herz">
                     </div>
                     <div class="embed-responsive embed-responsive-favicons js-profile-img--parallax">
-                        <img src="./img/icons.png" class="embed-responsive-item" alt="icons">
+                        <img loading=lazy src="./img/icons.png" class="embed-responsive-item" alt="icons">
                     </div>
                     <!--<div class="embed-responsive embed-responsive-1by1 js-profile-img--parallax">
-                        <img src="./img/icons_images.png" class="embed-responsive-item" alt="programm icons">
+                        <img loading=lazy src="./img/icons_images.png" class="embed-responsive-item" alt="programm icons">
                     </div>-->
 
                 </div>
@@ -239,12 +245,12 @@
                             <div class="cont">
                                 <div class="cont-val js-cont-val">
                                 </div>
-                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                                <svg class="svg" width="160" height="160" viewPort="0 0 100 100" version="1.1"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+                                    <circle r="70" cx="80" cy="80" fill="transparent" stroke-dasharray="440"
                                         stroke-dashoffset="0"></circle>
-                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent"
-                                        stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                    <circle class="bar" r="70" cx="80" cy="80" fill="transparent"
+                                        stroke-dasharray="440" stroke-dashoffset="0"></circle>
                                 </svg>
                             </div>
                             <div>
@@ -257,12 +263,12 @@
                             <div class="cont">
                                 <div class="cont-val js-cont-val">
                                 </div>
-                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                                <svg class="svg" width="160" height="160" viewPort="0 0 100 100" version="1.1"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+                                    <circle r="70" cx="80" cy="80" fill="transparent" stroke-dasharray="440"
                                         stroke-dashoffset="0"></circle>
-                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent"
-                                        stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                    <circle class="bar" r="70" cx="80" cy="80" fill="transparent"
+                                        stroke-dasharray="440" stroke-dashoffset="0"></circle>
                                 </svg>
                             </div>
                             <div>
@@ -275,12 +281,12 @@
                             <div class="cont">
                                 <div class="cont-val js-cont-val">
                                 </div>
-                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                                <svg class="svg" width="160" height="160" viewPort="0 0 100 100" version="1.1"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+                                    <circle r="70" cx="80" cy="80" fill="transparent" stroke-dasharray="440"
                                         stroke-dashoffset="0"></circle>
-                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent"
-                                        stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                    <circle class="bar" r="70" cx="80" cy="80" fill="transparent"
+                                        stroke-dasharray="440" stroke-dashoffset="0"></circle>
                                 </svg>
                             </div>
                             <div>
@@ -293,12 +299,12 @@
                             <div class="cont">
                                 <div class="cont-val js-cont-val">
                                 </div>
-                                <svg class="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1"
+                                <svg class="svg" width="160" height="160" viewPort="0 0 100 100" version="1.1"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48"
+                                    <circle r="70" cx="80" cy="80" fill="transparent" stroke-dasharray="440"
                                         stroke-dashoffset="0"></circle>
-                                    <circle class="bar" r="90" cx="100" cy="100" fill="transparent"
-                                        stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                                    <circle class="bar" r="70" cx="80" cy="80" fill="transparent"
+                                        stroke-dasharray="440" stroke-dashoffset="0"></circle>
                                 </svg>
                             </div>
                             <div>
@@ -316,26 +322,26 @@
     <footer class="bg-dark py-4 content-block">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <img src="./img/lowe-logo.svg" alt="Logo" width="100px">
-                <div class="font-color-white text-right">
+                <img loading=lazy src="./img/lowe-logo.svg" alt="Logo" width="100px">
+                <div class="font-color-white text-right mr-2">
                     <h3 class="font-color-white"><b>Jacqueline Lowe</b></h3>
-                    <div class="color-font-white">jacquelinelowe96@gmail.com</div>
-                    <div>Adalbert-Stifter-Strasse, Wien</div>
-                    <div>Site by Florian Muellner & Jacqueline Lowe</div>
+                    <div class="color-font-white footer-text">jacquelinelowe96@gmail.com</div>
+                    <div class="footer-text">Adalbert-Stifter-Strasse, Wien</div>
+                    <div class="footer-text">Site by Florian Muellner & Jacqueline Lowe</div>
                 </div>
             </div>
             <div class="contact-bar">
                 <div class="d-flex flex-wrap justify-content-end my-md-1">
                     <a href="#">
-                        <img class="social-icon" src="./img/social/linkedin.PNG" alt="Contact me on linkedIn">
+                        <img loading=lazy class="social-icon" src="./img/social/linkedin.PNG" alt="Contact me on linkedIn">
                     </a>
 
                     <a href="#">
-                        <img class="social-icon" src="./img/social/instagram.PNG" alt="Check out art page">
+                        <img loading=lazy class="social-icon" src="./img/social/instagram.PNG" alt="Check out art page">
                     </a>
 
                     <a href="#">
-                        <img class="social-icon" src="./img/social/behance.PNG" alt="Have a look at behance">
+                        <img loading=lazy class="social-icon" src="./img/social/behance.PNG" alt="Have a look at behance">
                     </a>
                 </div>
             </div>
@@ -369,12 +375,12 @@
                     <div class="row no-gutters">
                         <div class="col-12 col-md-6">
                             <div class="embed-responsive embed-responsive-1by1">
-                                <img src="./img/wrs/500px-title-wrs.jpg" class="embed-responsive-item"
+                                <img loading=lazy src="./img/wrs/500px-title-wrs.jpg" class="embed-responsive-item"
                                     alt="person skiing on slope">
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <div class="px-md-3">
+                            <div class="px-3 pt-3">
                                 <h3>Winter Resort Simulator Season 2</h3>
                                 <p>Winter Resort Simulator Season 2 is a realistic and authentic simulation of a ski resort.
                                     All vehicles and ropeways are built close to their counterpart in the real world. 
@@ -399,12 +405,12 @@
                 </div>
                 <h3 class="mb-3 mx-3">Winter Resort Simulator - References</h3>
                 <div class="embed-responsive embed-responsive-16by9">
-                    <img src="./img/wrs/vehicle-texturing-prinoth.jpg" class="embed-responsive-item"
+                    <img loading=lazy src="./img/wrs/vehicle-texturing-prinoth.jpg" class="embed-responsive-item"
                         alt="picture of snow vehicle in game">
                 </div>
 
                 <div class="embed-responsive embed-responsive-16by9">
-                    <img src="./img/wrs/char_sheet_16to9.png" class="embed-responsive-item"
+                    <img loading=lazy src="./img/wrs/char_sheet_16to9.png" class="embed-responsive-item"
                         alt="pictures of characters">
                 </div>
 
@@ -422,7 +428,7 @@
                     </p>
                 </div>
                 <div class="embed-responsive embed-responsive-16by9">
-                    <img src="./img/wrs/wrs-ui-design.jpg" class="embed-responsive-item"
+                    <img loading=lazy src="./img/wrs/wrs-ui-design.jpg" class="embed-responsive-item"
                         alt="pictures of ui">
                 </div>
                 <div class="px-3 my-3">
@@ -496,11 +502,11 @@
                         <div class="row no-gutters">
                             <div class="col-12 col-md-6">
                                 <div class="embed-responsive embed-responsive-1by1">
-                                    <img src="./img/taiji-image1_1by1_500px.png" class="embed-responsive-item" alt="">
+                                    <img loading=lazy src="./img/taiji-image1_1by1_500px.png" class="embed-responsive-item" alt="">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="px-md-3">
+                                <div class="px-3 pt-3">
                                     <h3>About Taiji</h3>
                                     <p>Taiji is currently a work in progress project. This 3D animation movie project
                                         originated during my
@@ -537,7 +543,7 @@
                     </div>
                     <h3 class="mb-3 mx-3">Concept | Modeling | Animation | Lighting & Rendering</h3>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <img src="./img/taiji-images1_16by9_720.png" class="embed-responsive-item"
+                        <img loading=lazy src="./img/taiji-images1_16by9_720.png" class="embed-responsive-item"
                             alt="test render of the movie">
                     </div>
 
@@ -572,7 +578,7 @@
                     </div>
 
                     <div class="embed-responsive embed-responsive-16by9">
-                        <img src="./img/taiji-images2_16by9_720.png" class="embed-responsive-item"
+                        <img loading=lazy src="./img/taiji-images2_16by9_720.png" class="embed-responsive-item"
                             alt="some insights into the work">
                     </div>
                     <div class="px-3 my-3">
@@ -612,12 +618,12 @@
                         <div class="row no-gutters">
                             <div class="col-12 col-md-6">
                                 <div class="embed-responsive embed-responsive-1by1">
-                                    <img src="./img/nanox-1by1-500px.png" class="embed-responsive-item"
+                                    <img loading=lazy src="./img/nanox-1by1-500px.png" class="embed-responsive-item"
                                         alt="Project screening of NaNox">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="px-md-3">
+                                <div class="px-3 pt-3">
                                     <h3>About NaN0x</h3>
                                     <p>NaN0x is some kind of Artificial Intelligence which tries to communicate with
                                         human beings about what she wants.
@@ -657,7 +663,7 @@
                     </div>
                     <h3 class="mb-3 mx-3">Dokumentation of NaN0x</h3>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <img src="./img/nanox-5img-16by9.png" class="embed-responsive-item"
+                        <img loading=lazy src="./img/nanox-5img-16by9.png" class="embed-responsive-item"
                             alt="screening of NaN0x in Ars Electronica">
                     </div>
 
@@ -712,12 +718,12 @@
                         <div class="row no-gutters">
                             <div class="col-12 col-md-6">
                                 <div class="embed-responsive embed-responsive-1by1">
-                                    <img src="./img/vogl/vogl2.jpg" class="embed-responsive-item"
+                                    <img loading=lazy src="./img/vogl/vogl2.jpg" class="embed-responsive-item"
                                         alt="Screenshot from the movie">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="px-md-3">
+                                <div class="px-3 pt-3">
                                     <h3>About 'Hast an Vogl?!</h3>
                                     <p>This project was created in the course of the study "Digital Arts" at the
                                         University of Applied Sciences Hagenberg.
@@ -760,7 +766,7 @@
                     </div>
                     <h3 class="mb-3 mx-3">2D-Animation 'Hast an Vogl?!'</h3>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <img src="./img/vogl/bgs_big.jpg" class="embed-responsive-item"
+                        <img loading=lazy src="./img/vogl/bgs_big.jpg" class="embed-responsive-item"
                             alt="screening of NaN0x in Ars Electronica">
                     </div>
 
@@ -800,12 +806,12 @@
                         <div class="row no-gutters">
                             <div class="col-12 col-md-6">
                                 <div class="embed-responsive embed-responsive-1by1">
-                                    <img src="./img/gemeinsam-erleben-1by1-500px.jpg" class="embed-responsive-item"
+                                    <img loading=lazy src="./img/gemeinsam-erleben-1by1-500px.jpg" class="embed-responsive-item"
                                         alt="conecpt art from project">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="px-md-3">
+                                <div class="px-3 pt-3">
                                     <h3>About 'Gemeinsam erleben'</h3>
                                     <p>I was allowed to realize a presentation video for the social media platform
                                         "Gemeinsam Erleben".
@@ -840,10 +846,10 @@
                                 </div>
                             </div>
                             <div class="my-2 embed-responsive embed-responsive-16by9">
-                                <img src="./img/gemeinsam-erleben_concept-16by9.jpg" class="embed-responsive-item"
+                                <img loading=lazy src="./img/gemeinsam-erleben_concept-16by9.jpg" class="embed-responsive-item"
                                     alt="concept of the video">
                             </div>
-                            <p class="px-md-3 my-2">
+                            <p class="px-3 my-2">
                                 You can see the first designs that were made for the client. Here the sticker look was
                                 tested and demontrated.
                                 In addition, a feeling for the flow of the animations should be conveyed (video,
@@ -888,12 +894,12 @@
                         <div class="row no-gutters">
                             <div class="col-12 col-md-6">
                                 <div class="embed-responsive embed-responsive-1by1">
-                                    <img src="./img/jams/meatjam.jpg" class="embed-responsive-item"
+                                    <img loading=lazy src="./img/jams/meatjam.jpg" class="embed-responsive-item"
                                         alt="person in front of pc">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="px-md-3">
+                                <div class="px-3 pt-3">
                                     <h3>About Gamejams and Animatonjams</h3>
                                     <p>A game jam is a contest where participants try to make a video game from scratch.
                                         Depending on the format, participants might work independently, or in teams. The
@@ -984,12 +990,12 @@
                         <div class="row no-gutters">
                             <div class="col-12 col-md-6">
                                 <div class="embed-responsive embed-responsive-1by1">
-                                    <img src="./img/machinery-500px.png" class="embed-responsive-item"
+                                    <img loading=lazy src="./img/machinery-500px.png" class="embed-responsive-item"
                                         alt="img from movie">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="px-md-3">
+                                <div class="px-3 pt-3">
                                     <h3>About Machinery</h3>
                                     <p>Machinery was created during my studies for the master programm Digital Arts at the university
                                         of applied sciences upper austria. It was produced together with a fellow student

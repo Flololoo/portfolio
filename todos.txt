@@ -1,0 +1,9 @@
+offen - Videos pause triggern wenn modal geschlossen wird
+done - Lazy loading
+done - skillkreise kleinerer radius
+done - Header text weiß wenn bg erscheint
+offen - hr styling
+done - bild von mir auf höhe von about me
+offen - Unter "check out ..." einen animierten Mauszeiger ( :D ) um zu zeigen dass man scrollen kann, dieser wäre gut wenn er verschwinden (ausfaded?)
+offen - Abstände mobil prüfen
+done - Mobiles header video einbinden

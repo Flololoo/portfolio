@@ -1,6 +1,5 @@
 export function skill() {
 
-    console.log('skill');
 
     $('.js-skill-block').one('triggerVisible', () => {
         let $skills = $('.js-skill');

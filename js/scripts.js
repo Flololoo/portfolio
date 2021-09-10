@@ -7,7 +7,7 @@ $(document).ready(function () {
 	skill();
 
     let $blocks = $('.js-content-block');
-    $blocks.css('transform', 'translateY(' + $(window).height() / 6 + 'px)');
+    $blocks.css('transform', 'translateY(50px)');
     scrollContent($blocks);
     navbar();
     document.addEventListener('scroll', function (event) {
@@ -63,7 +63,7 @@ function scrollContent($blocks) {
 
     $blocks.each( (index) => {
         if(screenBottom > $($blocks[index]).offset().top){
-            let fadingSpace = $(window).height() / 6;
+            let fadingSpace = 50;
 
             if(screenBottom - $($blocks[index]).offset().top < fadingSpace){
                 $($blocks[index]).css('transform', 'translateY('+ fadingSpace +'px)');

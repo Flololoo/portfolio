@@ -49,3 +49,9 @@ h5, .h5{
 h6, .h6{
   font-size: calc(14rem/16);
 }
+
+@media all and (max-width: 767px){
+  h3, .h3{
+    font-size: calc(20rem/16);
+  }
+}

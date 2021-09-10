@@ -1,0 +1,13 @@
+.navbar-light.bg-primary .navbar-nav .nav-link{
+    color: #fff;
+}
+
+@media all and (max-width: 767px){
+    .mobile-logo{
+        opacity: 0;
+        transition-duration: .5s;
+    }
+    .bg-primary .mobile-logo{
+        opacity: 1;
+    }
+}

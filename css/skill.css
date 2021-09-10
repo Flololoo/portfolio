@@ -15,8 +15,8 @@
 
 .cont {
     display: block;
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     margin: 2em auto;
     box-shadow: 0 0 1em black;
     border-radius: 100%;
@@ -35,5 +35,5 @@
     align-items: center;
 
     color: white;
-    font-size: 3rem;
+    font-size: calc( 34rem / 16 );
 }
