@@ -7,3 +7,9 @@ done - bild von mir auf höhe von about me
 offen - Unter "check out ..." einen animierten Mauszeiger ( :D ) um zu zeigen dass man scrollen kann, dieser wäre gut wenn er verschwinden (ausfaded?)
 done - Abstände mobil prüfen
 done - Mobiles header video einbinden
+
+
+
+jquery Fehler fixen
+Jac phone header
+Video hack

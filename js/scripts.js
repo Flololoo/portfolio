@@ -19,20 +19,24 @@ $(document).ready(function () {
 
     document.querySelector('.js-aboutme').addEventListener('click', (e) => {
         e.preventDefault();
+        e.stopPropagation();
         const aboutme =  $('#about');
         aboutme.css('transition-duration', '0ms');
         aboutme.css('transform', 'translateY(0)');
         document.getElementById('about').scrollIntoView();
         aboutme.css('transition-duration', '1.4s');
+        window.scrollBy(0, -75);
     });
 
     document.querySelector('.js-projects').addEventListener('click', (e) => {
         e.preventDefault();
+        e.stopPropagation();
         const projects =  $('#projects');
         projects.css('transition-duration', '0ms');
         projects.css('transform', 'translateY(0)');
         document.getElementById('projects').scrollIntoView();
         projects.css('transition-duration', '1.4s');
+        window.scrollBy(0, -75);
     });
 });
 
@@ -80,4 +84,13 @@ function scrollContent($blocks) {
 
 $('.project-modal').on('hide.bs.modal', (e) => {
     $('.project-modal__body').scrollTop(0);
+
+    let clone = $(e.target).find('.js-iframe iframe').clone();
+    $($(e.target).find('.js-iframe')[0]).empty();
+    $(e.target).find('.js-iframe').append(clone);
+
+    let videos = e.target.querySelectorAll('video');
+    for(let video of videos) {
+        video.pause();
+    }
 });

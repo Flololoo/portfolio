@@ -11,3 +11,13 @@
         opacity: 1;
     }
 }
+
+@media all and (max-width: 500px){
+    .mobile-logo{
+        width: 80px;
+    }
+    .nav-item.nav-link{
+        font-size: calc( 14rem / 16 );
+        margin-bottom: 0;
+    }
+}
